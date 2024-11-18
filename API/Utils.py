@@ -13,3 +13,7 @@ def get_tasks_from_lists(*list_ids, params=None) -> []:
         lists_tasks.extend(current_list_tasks)
 
     return [task['id'] for task in lists_tasks]
+
+
+def print_task_ids(task_ids):
+    print('|'.join(task_ids) or 'Not found')

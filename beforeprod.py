@@ -1,7 +1,7 @@
 import sys
 
 from API.API import update_task_status
-from API.Utils import get_tasks_from_lists, STAGE, BEFOREPROD
+from API.Utils import get_tasks_from_lists, STAGE, BEFOREPROD, print_task_ids
 
 if __name__ == '__main__':
     task_ids = get_tasks_from_lists(*sys.argv[1:], params={
@@ -11,4 +11,4 @@ if __name__ == '__main__':
     for task_id in task_ids:
         update_task_status(task_id, BEFOREPROD)
 
-    print('|'.join(task_ids))
+    print_task_ids(task_ids)
