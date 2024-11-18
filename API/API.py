@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 
 load_dotenv('.env')
 CU_TOKEN = os.getenv('CU_TOKEN')
-WORKSPACE_ID = os.getenv('WORKSPACE_ID')
 
 
 def get_tasks_from_list(list_id, params=None):
