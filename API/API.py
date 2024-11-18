@@ -36,7 +36,8 @@ def add_comment_to_task(task_id, comment):
         'Content-Type': 'application/json',
     }
     data = {
-        'comment_text': comment
+        'comment_text': comment,
+        'notify_all': False
     }
     response = requests.post(url, headers=headers, json=data)
     return response.json()
