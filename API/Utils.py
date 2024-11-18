@@ -7,7 +7,6 @@ PRODUCTION = 'production'
 
 
 def get_tasks_from_lists(*list_ids, params=None) -> []:
-    print(list_ids)
     lists_tasks = []
     for list_id in list_ids:
         current_list_tasks = get_tasks_from_list(list_id, params)
