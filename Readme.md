@@ -8,7 +8,7 @@
 ## Задачи в CU-списках
 
 ```bash
-python getTasks.py status_name list_id1, list_id2, list_id3, ...
+python getTasks.py status_name list_id1 list_id2 list_id3 ...
 ```
 
 ### Статусы
