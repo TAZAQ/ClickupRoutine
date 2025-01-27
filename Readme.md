@@ -38,7 +38,7 @@ https://app.clickup.com/t/8696h6b8n - ЕГИСЗ/Отчество подписы
 ### approved - stage
 
 ```bash
-python stage.py list_id1, list_id2, list_id3, ...
+python stage.py list_id1 list_id2 list_id3 ...
 ```
 
 Перенесёт все таски из списков из статуса "approved" в статус "stage".
@@ -46,7 +46,7 @@ python stage.py list_id1, list_id2, list_id3, ...
 ### stage - beforeprod
 
 ```bash
-python beforeprod.py list_id1, list_id2, list_id3, ...
+python beforeprod.py list_id1 list_id2 list_id3 ...
 ```
 
 Перенесёт все таски из списков из статуса "stage" в статус "beforeprod".
@@ -54,7 +54,7 @@ python beforeprod.py list_id1, list_id2, list_id3, ...
 ### beforeprod - production
 
 ```bash
-python production.py comment_text list_id1, list_id2, list_id3, ...
+python production.py comment_text list_id1 list_id2 list_id3 ...
 ```
 
 Перенесёт все таски из списков из статуса "beforeprod" в статус "production".
