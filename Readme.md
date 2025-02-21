@@ -1,7 +1,9 @@
 # Автоматизатор релизов
 
 ## Где взять list_id?
+
 Замечено 2 вида ссылок:
+
 * https://app.clickup.com/1234567/v/l/6-901204650614-1 - list_id = 901204650614
 * https://app.clickup.com/1234567/v/l/901204650614 - list_id = 901204650614
 
@@ -60,3 +62,23 @@ python production.py comment_text list_id1 list_id2 list_id3 ...
 Перенесёт все таски из списков из статуса "beforeprod" в статус "production".
 
 Во все таски из списка добавит сообщение comment_text.
+
+# Утилиты
+
+## Получить список задач в статусе
+
+```bash
+python getTasksTitles.py status list_id1 list_id2 ...
+```
+
+## Оставить коммент в списке задач
+
+```bash
+python addCommentToTasks.py comment_text task_id1 task_id2 ...
+```
+
+или
+
+```bash
+python addCommentToTasks.py comment_text "task_id1|task_id2|..."
+```
